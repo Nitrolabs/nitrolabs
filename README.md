@@ -1,11 +1,8 @@
-Worthy - Free Bootstrap Template
+NitroLabs Marketing Site
 =======================================================================
 
-Worhty is a Multipurpose One Page Template based on Bootstrap 3 Framework. 
-You can use it for corporate, business and agency webpages as well as 
-portfolio and personal webpages.
-
-If you like the template and find it useful, please help us spread the word :-)
+Based on the Worthy Multipurpose One Page Template.
+The template can be used for corporate, business and agency webpages as well as portfolio and personal webpages.
 
 - Theme version: v1.0
 - Release Date: 13 Nov 2014
@@ -14,19 +11,12 @@ If you like the template and find it useful, please help us spread the word :-)
 
 Live Preview
 =======================================================================
-http://www.htmlcoder.me/preview/worthy/v.1.0
+http://www.nitrolabs.com
 
-License
-=======================================================================
-Worthy is released under the Creative Commons Attribution 3.0 License
-https://creativecommons.org/licenses/by/3.0/
 
 Credits
-=======================================================================
-
-Demo images
-------------------------------------------------------
-- Unsplash by Crew - http://unsplash.com/
+===================================================================
+HTMLCoder for his amazing work with the Worthy Template
 
 Fonts
 ------------------------------------------------------
@@ -42,3 +32,15 @@ Resources
 - Animate CSS by Daniel T. Eden - http://daneden.github.io/animate.css/
 - Isotope Jquery plugin by metafizzy.co - http://isotope.metafizzy.co/
 - Backstrech by Scott Robbin - http://srobbin.com/jquery-plugins/backstretch/
+/number-readable'
+
+Deployment
+==========
+```sh
+s3cmd --configure
+git pull https://github.com/NitroLabs/nitrolabs.git
+cd nitrolabs
+s3cmd sync -r ./ s3://nitrolabs/
+```
+
+
