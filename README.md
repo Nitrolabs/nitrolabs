@@ -40,7 +40,8 @@ Deployment
 s3cmd --configure
 git pull https://github.com/NitroLabs/nitrolabs.git
 cd nitrolabs
-s3cmd sync -r ./ s3://nitrolabs/
+s3cmd sync -r ./ s3://www.nitrolabs.com/
+s3cmd setacl s3://www.nitrolabs.com/ --acl-public --recursive
 ```
 
 
